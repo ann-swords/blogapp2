@@ -5,6 +5,7 @@ const PORT = 3000
 const app = express()
 const passport = require('./lib/passportConfig')
 const session = require('express-session')
+require('dotenv').config() 
 
 //Initilaize Express Layouts BEFORE THE ROUTES!!!!
 const expressLayouts = require('express-ejs-layouts')
@@ -51,7 +52,7 @@ mongoose.set('strictQuery', false)
 // Node.js to look in a folder called views for all the ejs files. (so no need to specify view folder when we call the ejs files.)
 app.set("view engine", "ejs")
 
-mongoose.connect("mongodb+srv://anwaar:anwaar@cluster0.oxzmmkm.mongodb.net/blogapp?retryWrites=true&w=majority",
+mongoose.connect(process.env.DB,
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
