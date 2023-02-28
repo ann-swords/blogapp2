@@ -1,0 +1,19 @@
+<h2> <%= article.title %></h2>
+
+<div>
+    Content: <%= article.content %>
+</div>
+
+<div>
+    Is Published: <%= article.isPublished %>
+</div>
+
+<div>
+    Total Words: <%= article.totalWords %>
+</div>
+
+<div>
+     <%article.author.forEach((a, index) =>{  %>
+        Author:   <%= article.author[index].name%>
+    <% })%>
+</div>

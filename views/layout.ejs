@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  
+
+    <title>Blog App</title>
+</head>
+
+<body>
+    Shared Header from Layout Page 
+    <div><h1>Blog app</h1></div>
+    <hr>
+    <nav>
+        <a href="/article/index">Articles</a>
+        <a href="/article/add">Add Articles</a>
+        <a href="/author/add">Add Author</a>
+        <a href="/auth/signup">Sign Up Here</a>
+        <a href="/auth/signin">Sign In</a>
+    </nav>
+
+    <hr>
+    <%- body%>
+
+    <br><br>
+    shared Footer served from Layout page
+</body>
+</html>
